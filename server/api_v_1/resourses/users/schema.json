@@ -1,0 +1,29 @@
+{
+  "create": {
+    "properties":{
+      "type" : {"type" : "string"},
+      "attributes" : {
+        "properties":{
+          "age": {"type": "number"},
+          "name": {"type": "string"}
+        },
+        "required": ["age","name"]
+      }
+    },
+    "required": ["type","attributes"]
+  },
+  "update": {
+    "properties":{
+      "id": {"type": "string"},
+      "type": {"type" : "string"},
+      "attributes" : {
+        "properties":{
+          "age": {"type": "number"},
+          "name": {"type": "string"}
+        },
+        "required": ["age","name"]
+      }
+    },
+    "required": ["id","type","attributes"]
+  }
+}

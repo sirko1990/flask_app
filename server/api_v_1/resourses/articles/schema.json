@@ -1,0 +1,61 @@
+{
+  "create": {
+    "properties": {
+      "type": {"type": "string"},
+      "attributes": {
+        "properties": {
+          "text": {"type": "string"},
+          "title": {"type": "string"}
+        },
+        "required": ["text", "title"]
+      },
+      "relationships": {
+        "properties": {
+          "users":{
+            "properties": {
+              "data": {
+                "properties": {
+                  "id" : {"type": "string"},
+                  "type": {"type": "string"}
+                },
+                "required": ["id","type"]
+              }
+            },
+            "required": ["data"]
+          }
+        },
+        "required": ["users"]
+      }
+    },
+    "required": ["type", "attributes", "relationships"]
+  },
+  "create_comment":{
+    "properties":{
+      "type": {"type" : "string"},
+      "attributes" : {
+        "properties":{
+          "text": {"type": "string"}
+        },
+        "required": ["text"]
+      },
+      "relationships":{
+        "properties":{
+          "users":{
+            "properties":{
+              "data":{
+                "properties":{
+                  "type":{"defult":"users"},
+                  "id":{"type":"string"}
+                },
+                "required": ["type","id"]
+              }
+            },
+            "required": ["data"]
+          }
+        },
+        "required": ["users"]
+      }
+    },
+    "required": ["type","attributes","relationships"]
+  }
+}
