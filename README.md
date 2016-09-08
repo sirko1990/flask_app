@@ -8,7 +8,7 @@
 ```
 
 ## API DOCUMENTATION
-(api documentation[https://docs.google.com/document/d/1uccBlQ6hWQ43ovZp65Sk1q6d11jkGb6l-TQ3mN8rpf0/edit]
+[api documentation](https://docs.google.com/document/d/1uccBlQ6hWQ43ovZp65Sk1q6d11jkGb6l-TQ3mN8rpf0/edit)
 
 ## LINKS
 - to app:  http://localhost:8899/api/v1/
