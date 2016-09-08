@@ -26,7 +26,7 @@ def update(id):
     user.name = attributes["name"]
     user.age = attributes["age"]
     user.save()
-    return jsonify({"data": user.getType(), "id":user.getId(), "attributes": user.getAttributes()}), 202
+    return jsonify({"data": {"type":user.getType(), "id":user.getId(), "attributes": user.getAttributes()}}), 202
 
 
 
