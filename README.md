@@ -2,7 +2,7 @@
 
 - The App uses Vagrant for deploy to ur PC
 - if u don't have Vagrant u can install it from here - https://www.vagrantup.com/
-- run only one command
+- move to app's root and run command
 ```
  $ sudo vagrant up
 ```
